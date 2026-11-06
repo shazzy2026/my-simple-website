@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sharon mong'are | Hobbies</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #17365d;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 16px;
+        }
+
+        nav a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        .name-container {
+            overflow: hidden;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .moving-name {
+            font-size: 48px;
+            font-weight: bold;
+            font-style: italic;
+            color: #17365d;
+            animation: moveName 8s linear infinite alternate;
+        }
+
+        @keyframes moveName {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(60%);
+            }
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 24px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #00000012;
+        }
+
+        h1, h2 {
+            color: #17365d;
+        }
+
+        h2 {
+            border-bottom: 2px solid #17365d;
+            padding-bottom: 8px;
+        }
+
+        li {
+            padding: 5px;
+        }
+
+        footer {
+            background-color: #17365d;
+            text-align: center;
+            padding: 18px;
+        }
+
+        footer p {
+            color: lime;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .moving-name {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Personal Experience</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="hobbies.html">Hobbies</a>
+    </nav>
+
+    <!-- MOVING NAME -->
+
+    <div class="name-container">
+        <div class="moving-name">
+            SHARON MONG'ARE
+        </div>
+    </div>
+
+    <main>
+
+        <section>
+
+            <h1>My Hobbies</h1>
+
+            <p>
+                Apart from my academic studies, I enjoy
+                participating in activities that improve my
+                creativity, knowledge and technical skills.
+            </p>
+
+            <h2>Ordered List of My Hobbies</h2>
+
+            <ol type="I">
+
+                <li>Web Development</li>
+
+                <li>Software Development</li>
+
+                <li>Computer Programming</li>
+
+                <li>Learning New Technologies</li>
+
+            </ol>
+
+            <h2>Unordered List of My Interests</h2>
+
+            <ul>
+
+                <li>Watching Movies</li>
+
+                <li>Listening to Music</li>
+
+                <li>Playing Football</li>
+
+                <li>Exploring Computers</li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Personal Experience</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="hobbies.html">Hobbies</a>
+    </nav>
+
+    <footer>
+        <p>© 2026 Sharon mong'are. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```

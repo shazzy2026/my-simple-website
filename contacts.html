@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sharon Mong'are | Contacts</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #17365d;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 16px;
+        }
+
+        nav a:hover {
+            color: yellow;
+            text-decoration: underline;
+        }
+
+        .name-container {
+            overflow: hidden;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .moving-name {
+            font-size: 48px;
+            font-weight: bold;
+            font-style: italic;
+            color: #17365d;
+            animation: moveName 8s linear infinite alternate;
+        }
+
+        @keyframes moveName {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(60%);
+            }
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 24px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px #00000012;
+        }
+
+        h1, h2 {
+            color: #17365d;
+        }
+
+        form {
+            background-color: #f4f8fc;
+            padding: 20px;
+            border: 1px solid #17365d;
+            border-radius: 6px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkgreen;
+        }
+
+        footer {
+            background-color: #17365d;
+            text-align: center;
+            padding: 18px;
+        }
+
+        footer p {
+            color: lime;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .moving-name {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION -->
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal.html">Personal Experience</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="hobbies.html">Hobbies</a>
+    </nav>
+
+    <!-- MOVING NAME -->
+
+    <div class="name-container">
+        <div class="moving-name">
+            SHARON MONG'ARE
+        </div>
+    </div>
+
+    <main>
+
+        <section>
+
+            <h1>Contact Information</h1>
+
+            <p>
+               📞 Phone:
+                <a href="tel:+254706462096">07189873337</a>
+            </p>
+
+            <p>
+                ✉ Email:
+                <a href="mailto:kerubos814@gmail.com">
+                    kerubos814@gmail.com
+                </a>
+            </p>
+
+            <p>📍Location: Kenya</p>
+
+            <p>
+                <a href="mailto:kerubos814@gmail.com">
+                    Email me
+                </a>
+            </p>
+
+            <hr>
+
+            <h2>Send Me a Message</h2>
+
+            <form action="mailto:kerubos814@gmail.com"
+                  method="post"
+                  enctype="text/plain">
+
+                <label>Enter your Name:</label>
+
+                <input type="text"
+                       name="Name"
+                       placeholder="Enter your name"
+                       required>
+
+                <label>E-mail address:</label>
+
+                <input type="email"
+                       name="Email"
+                       placeholder="Enter your email"
+                       required>
+
+                <label>Message Subject:</label>
+
+                <input type="text"
+                       name="Subject"
+                       placeholder="Enter message subject"
+                       required>
+
+                <label>Enter your message:</label>
+
+                <textarea name="Message"
+                          rows="7"
+                          placeholder="Write your message here..."
+                          required></textarea>
+
+                <input type="checkbox"
+                       name="Copy"
+                       value="Yes">
+
+                E-mail a copy of this message to your own address.
+
+                <br><br>
+
+                <button type="submit">Send</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="experience.html">Personal Experience</a>
+        <a href="contacts.html">Contacts</a>
+        <a href="hobbies.html">Hobbies</a>
+    </nav>
+
+    <footer>
+        <p>© 2026 kerubos814@gamail. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
